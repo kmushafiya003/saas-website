@@ -102,7 +102,7 @@ export const NavLinks2 = [
     {
         id:1,
         title: "Contact",
-        path: "/contact-us"
+        path: "#"
 
     },
 ]
