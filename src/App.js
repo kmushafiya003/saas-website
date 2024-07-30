@@ -1,5 +1,6 @@
 
 import './App.css';
+import DynamicButton from './components/common/DynamicButton';
 
 function App() {
   return (
