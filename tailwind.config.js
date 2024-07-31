@@ -7,10 +7,13 @@ module.exports = {
     fontFamily: {
       
       poppins: ["Poppins", "sans-serif"],
-      "nunito-sans": ["Nunito Sans", "sans-serif"]
+      "nunito-sans": ["Nunito Sans", "sans-serif"],
+
+      inter: ['Inter', 'sans-serif'],
      
     },
     colors: {
+      'custom-orange':"#FF553E",
       white: "#fff",
       black: "#000",
       transparent: "#ffffff00",
