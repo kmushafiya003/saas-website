@@ -26,6 +26,7 @@ export const funFact1 = [
 
     },
 ]
+
 export const funFact2 = [
     {
         id:4,
@@ -52,3 +53,4 @@ export const funFact2 = [
 
     },
 ]
+
