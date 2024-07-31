@@ -17,8 +17,8 @@ const Navbar = () => {
     };
 
     return (
-        <div className="container xl:px-4 px-1">
-            <nav className="bg-white p-6 flex items-center justify-center flex-wrap">
+        <div className="container px-1 xl:px-4">
+            <nav className="flex flex-wrap items-center justify-center p-6 bg-white">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <img
                         src={logo}
@@ -36,18 +36,18 @@ const Navbar = () => {
                 </div>
 
                 <div className={`w-full md:flex md:items-center md:w-auto ${isMobileMenuOpen ? 'block' : 'hidden'} ml-8`}>
-                    <ul className="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 font-poppins items-center justify-center md:justify-start">
+                    <ul className="flex flex-col items-center justify-center space-y-2 md:flex-row md:space-x-8 md:space-y-0 font-poppins md:justify-start">
                         {NavLinks1.map((navItem) => (
-                            <li key={navItem.id} className="text-black relative">
+                            <li key={navItem.id} className="relative text-black">
                                 {navItem.isDropDown ? (
                                     <div className="relative flex flex-col items-center md:items-center">
                                         <span
-                                            className="cursor-pointer flex items-center"
+                                            className="flex items-center cursor-pointer"
                                             onClick={() => handleDropdownToggle(navItem.id)}
                                         >
                                             {navItem.link[0].title}
                                             <svg
-                                                className="ml-1 w-4 h-4"
+                                                className="w-4 h-4 ml-1"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 20 20"
                                                 fill="none"
@@ -81,11 +81,11 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-0 font-poppins items-center justify-center md:justify-start ml-8">
-                        <Link to="/login" className="text-secondary-soft-blue px-4 py-2 rounded mb-2 md:mb-0 md:mr-2">
+                    <div className="flex flex-col items-center justify-center mt-4 ml-8 md:flex-row md:space-x-4 md:mt-0 font-poppins md:justify-start">
+                        <Link to="/login" className="px-4 py-2 mb-2 rounded text-secondary-soft-blue md:mb-0 md:mr-2">
                             Login
                         </Link>
-                        <Link to="/sign-up" className="text-secondary-soft-blue border border-secondary-soft-blue px-4 py-2 rounded-lg hover:bg-secondary-soft-blue hover:text-white">
+                        <Link to="/sign-up" className="px-4 py-2 border rounded-lg text-secondary-soft-blue border-secondary-soft-blue hover:bg-secondary-soft-blue hover:text-white">
                             Sign Up
                         </Link>
                     </div>
