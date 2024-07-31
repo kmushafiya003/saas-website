@@ -1,6 +1,6 @@
-import Icon1 from '../images/Icon1.svg'
-import Icon2 from '../images/Icon2.svg'
-import Icon3 from '../images/Icon3.svg'
+import Icon1 from '../images/Icon1.png'
+import Icon2 from '../images/Icon2.png'
+import Icon3 from '../images/Icon3.png'
 
 
 export const funFact1 = [
@@ -26,3 +26,31 @@ export const funFact1 = [
 
     },
 ]
+
+export const funFact2 = [
+    {
+        id:4,
+        count: "115k+",
+        text: "Active user"
+
+    },
+    {
+        id:5,
+        count: "88k",
+        text: "User passive"
+
+    },
+    {
+        id:6,
+        count: "30%",
+        text: "Increase in user"
+
+    },  
+    {
+        id:7,
+        count: ">10k",
+        text: "Good Tesimonials"
+
+    },
+]
+
