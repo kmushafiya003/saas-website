@@ -11,14 +11,16 @@ const Home2 = () => {
 
   return (
     <div className="relative min-h-screen">
+
 <div className="absolute inset-0 bg-[#FFF8F2] opacity-6 z-15"></div>
       <Navbar2/>
 
 
 
+
       {/* Background Image */}
       <div
-      
+
       >
         {/* Color Overlay */}
         
@@ -31,6 +33,7 @@ const Home2 = () => {
 
       {/* Main Section */}
       <section className="relative h-screen flex flex-col items-center justify-center bg-center bg-no-repeat xsm:w-[] " style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} >
+
          {/* Text Div */}
          <div className="relative z-20  px-5 pt-[180px] pb-[30px]    xsm:text-center md:px-12  md:py-12  lg:px-12 lg:py-16 max-w-screen-xl mx-auto mt-20 text-left  ">
     {/* Heading */}
@@ -48,12 +51,14 @@ const Home2 = () => {
     </button>
   </div>
 
+
         {/* Fun Facts Section */}
         <div className="relative z-30 flex flex-col flex-nowrap items-center justify-center w-full mt-auto pb-12  ">
           {/* White SVG */}
           <img src={whiteCornerSVG} alt="White Corner SVG" className="absolute inset-0 z-20" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
 
           {/* Fun Facts */}
+
           <div className="relative z-30 gap-2 flex flex-nowrap flex-col xsm:flex-row mr-[10%] mt-[5%]">
       {funFact1.map((item, index) => (
         <div
@@ -64,13 +69,14 @@ const Home2 = () => {
             {item.count}
             {item.text === "Active user" && '+'}
           </div>
-          <div className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700">
+          <div className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700">
             {item.text}
           </div>
           
         </div>
       ))}
     </div>
+
 
         </div>
         <div className="absolute inset-0 ">
