@@ -36,19 +36,32 @@ const Home3 = () => {
         </div>
       </div>
       <div>
-        {/* <div className="">
+        <div className="flex">
+          {
+            funFact2.map((data)=> (
+              <div className="flex flex-col">
+                 <h1>{data.count}</h1>
+                 <p>{data.text}</p>
+              </div>
+            ))
+          }
+
+
+
+
+
        
-         <h1 className="font-bold smd:flex smd:justify-center smd:gap-32 smd:text-56px dxs:gap-5 dxs:flex-col dxs:text-2rem dxs:justify-center dxs:items-center">
+         {/* <h1 className="font-bold smd:flex smd:justify-center smd:gap-32 smd:text-56px dxs:gap-5 dxs:flex-col dxs:text-2rem dxs:justify-center dxs:items-center">
          {funFact2.map((item) => (
             <div key={item.id}>{item.count}</div> 
          
           ))} 
-         </h1>
-          <p className="xxs:flex mmd:justify-center smd:pl-20 smd:gap-36 dxs:flex-col dxs:gap-2 dxs:pl-0 dxs:items-center">{funFact2.map((item) => (
+         </h1> */}
+          {/* <p className="xxs:flex mmd:justify-center smd:pl-20 smd:gap-36 dxs:flex-col dxs:gap-2 dxs:pl-0 dxs:items-center">{funFact2.map((item) => (
             <div key={item.id}>{item.text}</div> 
          
-          ))}</p>
-        </div> */}
+          ))}</p> */}
+        </div>
       </div>
     </div>
   );

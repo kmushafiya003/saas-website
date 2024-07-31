@@ -6,7 +6,7 @@ import Home3 from './pages/Home3';
 function App() {
   return (
     <div className='w-full min-h-screen overflow-x-hidden' >
-
+    <Home3/>
     
     </div>
   );
