@@ -14,7 +14,8 @@ module.exports = {
      
     },
     colors: {
-      'custom-orange':"#FF553E",
+      'custom-blend':'#40201E',  //home2 para color
+      'custom-orange':"#FF553E", //home2 butoon color
       white: "#fff",
       black: "#000",
       transparent: "#ffffff00",

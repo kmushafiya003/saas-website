@@ -10,7 +10,7 @@ const Home2 = () => {
   const svgBottomLeft = '/rocket.svg';
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen text-custom-blend">
 
 <div className="absolute inset-0 bg-[#FFF8F2] opacity-6 z-15"></div>
       <Navbar2/>
@@ -42,11 +42,11 @@ const Home2 = () => {
       <span className="block">Tracking that you Need</span>
     </h1>
     {/* Paragraph */}
-    <p className="text-xm mt-4 dxs:text-sm  xxs:text-base  xsm:text-lg   xs:text-xl text-black mb-6   lg:leading-relaxed max-w-lg mx-auto">
+    <p className="text-xm mt-4 dxs:text-sm  xxs:text-base  xsm:text-lg   xs:text-xl  mb-6   lg:leading-relaxed max-w-lg mx-auto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia aliquam architecto beatae quo quibusdam.
     </p>
     {/* Button */}
-    <button className=" px-10 py-5 bg-custom-orange text-white font-semibold rounded-full shadow-md hover:bg-orange-600 transition-colors">
+    <button className=" px-10 py-5 bg-custom-orange hover:bg-primary-fuel-yellow text-white font-semibold rounded-full shadow-md hover:bg-orange-600 transition-colors">
       Start 14 Days Trial
     </button>
   </div>
