@@ -5,11 +5,8 @@ import Home3 from './pages/Home3';
 
 function App() {
   return (
-    <div >
-      
-      <div >
-        
-      </div>
+    <div className='w-full min-h-screen overflow-x-hidden' >
+
     
     </div>
   );

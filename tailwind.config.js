@@ -28,7 +28,7 @@ module.exports = {
 
       },
       secondary: {
-        "sky-blue": "#FCA61F",
+        "sky-blue": "#6DCBFF",
          "easter-purple": "#C06EF3",
          "soft-blue": "#7188FF",
          "selective-yellow": "#FDBA09",
