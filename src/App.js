@@ -1,14 +1,11 @@
 
 import './App.css';
-import DynamicButton from './components/common/DynamicButton';
+
 
 function App() {
   return (
-    <div >
-      
-      <div >
-        
-      </div>
+    <div className='w-full min-h-screen overflow-x-hidden' >
+
     
     </div>
   );

@@ -1,6 +1,6 @@
-import Icon1 from '../images/Icon1.svg'
-import Icon2 from '../images/Icon2.svg'
-import Icon3 from '../images/Icon3.svg'
+import Icon1 from '../images/Icon1.png'
+import Icon2 from '../images/Icon2.png'
+import Icon3 from '../images/Icon3.png'
 
 
 export const funFact1 = [
