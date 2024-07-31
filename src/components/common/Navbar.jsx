@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <div className="container px-1 xl:px-4">
-            <nav className="flex flex-wrap items-center justify-between p-6 bg-white">
+            <nav className="flex-wrap flex items-center justify-center p-6 bg-white">
                 <div className="flex items-center justify-between w-full md:w-auto">
                     <img
                         src={logo}
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
 
                 <div className={`w-full md:flex md:items-center md:w-auto ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-                    <ul className="flex flex-col items-center justify-center space-y-2 md:flex-row md:space-x-8 md:space-y-0 font-poppins md:justify-start">
+                    <ul className="flex flex-col items-center justify-center space-y-2 md:flex-row md:space-x-8 md:space-y-0 font-poppins md:justify-start ml-8 md:ml-16">
                         {NavLinks1.map((navItem) => (
                             <li key={navItem.id} className="relative text-black">
                                 {navItem.isDropDown ? (
@@ -61,7 +61,7 @@ const Navbar = () => {
                                         {openDropdown === navItem.id && (
                                             <div
                                                 className="mt-2 text-white rounded shadow-lg bg-secondary-soft-blue md:absolute md:mt-0"
-                                                style={{ zIndex: 10 }}
+                                                style={{ top: '100%', zIndex: 10 }}
                                             >
                                                 {navItem.link.map((subLink, index) => (
                                                     <Link
@@ -82,7 +82,7 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <div className="flex flex-col items-center justify-center mt-4 ml-8 md:flex-row md:space-x-4 md:mt-0 font-poppins md:justify-start">
+                    <div className="flex flex-col items-center justify-center mt-4 md:mt-0 font-poppins md:flex-row md:space-x-4 md:justify-start md:ml-8">
                         <Link to="/login" className="px-4 py-2 mb-2 rounded text-secondary-soft-blue md:mb-0 md:mr-2">
                             Login
                         </Link>
