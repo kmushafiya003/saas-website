@@ -4,13 +4,22 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontSize: {
+      '56px': '56px',
+      '0.8rem': '0.8rem',
+      '2rem' : '2rem'
+    },
+  
     fontFamily: {
       
       poppins: ["Poppins", "sans-serif"],
-      "nunito-sans": ["Nunito Sans", "sans-serif"]
+      "nunito-sans": ["Nunito Sans", "sans-serif"],
+
+      inter: ['Inter', 'sans-serif'],
      
     },
     colors: {
+      'custom-orange':"#FF553E",
       white: "#fff",
       black: "#000",
       transparent: "#ffffff00",
@@ -22,7 +31,7 @@ module.exports = {
 
       },
       secondary: {
-        "sky-blue": "#FCA61F",
+        "sky-blue": "#6DCBFF",
          "easter-purple": "#C06EF3",
          "soft-blue": "#7188FF",
          "selective-yellow": "#FDBA09",

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { NavLinks1 } from '../../data/navlinks';
 import logo from '../../images/logo.svg';
 
+
 const Navbar = () => {
     const [openDropdown, setOpenDropdown] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
