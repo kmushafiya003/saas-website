@@ -1,9 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLinks2 } from '../../data/navlinks';
-import logo from '../../images/Logo (1).svg';
+import logo1 from '../../images/Logo (1).svg';
+import logo2 from '../../images/Logo (2).svg'
+import { useLocation } from 'react-router-dom';
 
 const Navbar2 = () => {
+
+    const location = useLocation();
+
+    const [logo , setLogo] = useState(1);
+
+    useEffect(()=>{
+        if(location.pathname === "/home2"){
+            setLogo(1);
+        }else{
+            setLogo(2);
+        }
+    }, [location.pathname])
+
+
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const handleMobileMenuToggle = () => {
@@ -14,7 +30,7 @@ const Navbar2 = () => {
         <div className="container xl:px-4 px-1">
             <nav className="bg-white p-6 flex items-center justify-center flex-wrap">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                    <img src={logo} alt="Logo" className="h-8 w-auto" />
+                    <img src={logo === 1 ? logo1 : logo === 2 ? logo2 : ""} alt="Logo" className="h-8 w-auto" />
                     <button
                         className="text-secondary-selective-yellow md:hidden"
                         onClick={handleMobileMenuToggle}
@@ -37,12 +53,22 @@ const Navbar2 = () => {
                     </ul>
 
                     <div className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 items-center justify-center md:justify-start ml-8">
-                        <Link to="/login" className="text-secondary-selective-yellow px-8 py-4 hover:text-black mb-2 md:mb-0">
+                        <Link to="/login" className={` px-8 py-4 hover:text-black mb-2 md:mb-0
+                        ${
+                            logo === 1 ? "text-secondary-selective-yellow" : "text-secondary-light-turquoise"
+                        }
+                            `}>
                             Login
                         </Link>
                         <Link
                             to="/sign-up"
-                            className="text-white bg-secondary-selective-yellow px-8 py-4 rounded-full hover:bg-secondary-selective-yellow hover:text-white focus:outline-none focus:ring-1 focus:ring-selective-yellow"
+                            className={`text-white  px-8 py-4 rounded-full  hover:text-white focus:outline-none focus:ring-1 focus:ring-selective-yellow
+
+                                ${
+                                    logo === 1 ? "bg-secondary-selective-yellow hover:bg-secondary-selective-yellow" : "bg-secondary-light-turquoise hover:bg-secondary-light-turquoise "
+                                }
+                                
+                                `}
                         >
                             Sign Up
                         </Link>

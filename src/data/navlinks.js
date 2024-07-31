@@ -11,7 +11,7 @@ export const NavLinks1 = [
             },
             {
                 title: "Home2",
-                path: "/Home2"
+                path: "/home2"
             },
             {
                 title: "Home3",

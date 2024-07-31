@@ -37,12 +37,12 @@ const Navbar3 = () => {
                     </ul>
 
                     <div className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0 items-center justify-center md:justify-start ml-8">
-                        <Link to="/login" className="text-secondary-light-turquoise px-8 py-4 hover:text-black mb-2 md:mb-0">
+                        <Link to="/login" className=" px-8 py-4 hover:text-black mb-2 md:mb-0">
                             Login
                         </Link>
                         <Link
                             to="/sign-up"
-                            className="text-white bg-secondary-light-turquoise px-8 py-4 rounded-full hover:bg-secondary-light-turquoise hover:text-white focus:outline-none focus:ring-1 focus:ring-light-turquoise"
+                            className="text-white  px-8 py-4 rounded-full  hover:text-white focus:outline-none focus:ring-1 focus:ring-light-turquoise"
                         >
                             Sign Up
                         </Link>

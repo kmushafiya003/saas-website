@@ -16,7 +16,7 @@ const HeroSection1 = () => {
         <section className='w-full h-full pt-4 bg-white  relative '>
 
             {/* ---------------- container -------------- */}
-            <div className='xlg:w-10/12 xmd:w-11/12 sm:w-9/12 xxs:w-10/12 w-11/12  xlg:ml-auto ml-auto mr-auto xlg:mr-0 flex xmd:flex-row flex-col gap-y-8 items-center justify-between lg:justify-start relative xlg:h-[680px] xs:pt-20 pt-6 xs:pb-10 pb-16'>
+            <div className='xlg:w-10/12 xmd:w-11/12 sm:w-9/12 xxs:w-10/12 w-11/12  xlg:ml-auto ml-auto mr-auto xlg:mr-0 flex xmd:flex-row flex-col gap-y-8 items-center justify-between lg:justify-start relative xlg:h-[680px] xs:pt-20 pt-6 xs:pb-4 pb-16'>
 
                 {/* ----------- Content ------------ */}
 

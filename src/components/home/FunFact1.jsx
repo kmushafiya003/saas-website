@@ -3,7 +3,7 @@ import { funFact1 } from '../../data/fun-fact-data'
 
 const FunFact1 = () => {
   return (
-   <section className='w-full h-full pt-2 sm:pt-10 pb-6 bg-white  relative b '>
+   <section className='w-full h-full pt-2  pb-6 bg-white  relative b '>
 
      {/* ----------- container ---------------- */}
 

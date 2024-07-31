@@ -1,5 +1,6 @@
 import React from 'react';
 import { funFact1 } from '../data/fun-fact-data'; // Adjust the import path as needed
+import Navbar2 from '../components/common/Navbar2';
 
 const Home2 = () => {
   // Background image path
@@ -8,8 +9,10 @@ const Home2 = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Background Color */}
-      <div className="absolute inset-0 bg-[#FFF8F2] z-0"></div>
+
+      <Navbar2/>
+
+
 
       {/* Background Image */}
       <div
@@ -49,7 +52,7 @@ const Home2 = () => {
       <span className="block">Tracking that you Need</span>
     </h1>
     {/* Paragraph */}
-    <p className="text-xm mt-4 dxs:text-sm mt-6 xxs:text-base  xsm:text-lg   xs:text-xl text-black mb-6   lg:leading-relaxed max-w-lg mx-auto">
+    <p className="text-xm mt-4 dxs:text-sm  xxs:text-base  xsm:text-lg   xs:text-xl text-black mb-6   lg:leading-relaxed max-w-lg mx-auto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia aliquam architecto beatae quo quibusdam.
     </p>
     {/* Button */}
@@ -64,9 +67,9 @@ const Home2 = () => {
           <img src={whiteCornerSVG} alt="White Corner SVG" className="absolute inset-0 z-20" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
 
           {/* Fun Facts */}
-          <div className="relative z-30 gap-2  flex flex-nowrap flex-col gap-6 xsm:flex-row mr-[10%] mt-[5%]">
+          <div className="relative z-30 gap-2  flex flex-nowrap flex-col  xsm:flex-row mr-[10%] mt-[5%]">
   {funFact1.map(({ id, count, text }) => (
-    <div key={id} className="bg-white border-b-2 border-gray-100 p-4 h-40 p-10 w-52 sm:p-10   md:p-10 lg:p-8  flex flex-col items-center ">
+    <div key={id} className="bg-white border-b-2 border-gray-100 p-4 h-40  w-52 sm:p-10   md:p-10 lg:p-8  flex flex-col items-center ">
       <div className="text-2xl  sm:text-xl md:text-2xl lg:text-3xl mt-2 font-semibold text-black mb-2">
         {count}
         {text === "Active user" && '+'}
